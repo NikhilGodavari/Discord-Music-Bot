@@ -5,8 +5,7 @@ import yt_dlp
 import asyncio
 import os
 
-# Add your FFMPEG bin folder to system path
-os.environ["PATH"] += os.pathsep + r"C:\Users\Admin\Documents\FFMPEG\bin"
+os.environ["PATH"] += os.pathsep + r"FFMPEG location address"
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -97,6 +96,6 @@ client = commands.Bot(command_prefix="Tillu mowa ", intents=intents)
 
 async def main():
     await client.add_cog(MusicBot(client))
-    await client.start('MTM4NDIyMzUxMTk3MDU4MjY3MQ.GsC5yY.H1-j8QTQJttkalBDqDKoonKoNyc6Gq4_1Gqmz0')  # Replace with your real token
+    await client.start('Enter your Bot Token Here')
 
 asyncio.run(main())
