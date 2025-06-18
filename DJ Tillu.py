@@ -96,6 +96,6 @@ client = commands.Bot(command_prefix="Tillu mowa ", intents=intents)
 
 async def main():
     await client.add_cog(MusicBot(client))
-    await client.start('MTM4NDIyMzUxMTk3MDU4MjY3MQ.GsC5yY.H1-j8QTQJttkalBDqDKoonKoNyc6Gq4_1Gqmz0')
+    await client.start('Enter Bot Token Here')
 
 asyncio.run(main())
